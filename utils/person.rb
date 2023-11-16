@@ -1,4 +1,5 @@
-# Code
+require 'securerandom'
+
 class Person
   attr_reader :id # Generates getters
   attr_accessor :name, :age # Generates getters and setters
