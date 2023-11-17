@@ -2,8 +2,8 @@ require 'securerandom'
 require_relative '../interfaces/nameable'
 
 class Person < Nameable
-  attr_reader :id, :rentals # Generates getters
-  attr_accessor :name, :age # Generates getters and setters
+  attr_reader :id
+  attr_accessor :name, :age, :rentals
 
   # Initialize a new Person instance.
   #
@@ -54,18 +54,18 @@ class Person < Nameable
     @name
   end
 
-  # Add a rental record to the person.
+  # Add a Rental to the person's list of rentals.
   #
   # Parameters:
-  # - rental: The rental object to be added.
+  # - book: The Book object to be rented.
+  # - date: The date on which the rental is initiated.
   #
   # Actions:
-  # - Add the rental to the person's rentals.
-  # - Set the person for the rental.
+  # - Creates a new Rental instance, associating it with the provided Book and the current Person.
+  # - Adds the created Rental to the person's list of rentals.
   #
-  # Returns: None.
-  def add_rental(rental)
-    @rentals << rental
-    rental.person = self
+  # Returns: The newly created Rental instance.
+  def add_rental(book, date)
+    Rental.new(date, book, self)
   end
 end
