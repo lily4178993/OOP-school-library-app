@@ -1,6 +1,5 @@
 class Book
-  attr_accessor :title, :author
-  attr_reader :rentals
+  attr_accessor :title, :author, :rentals
 
   # Initialize a new Book instance.
   #
@@ -21,15 +20,15 @@ class Book
   # Add a rental to the book's rentals.
   #
   # Parameters:
-  # - rental: The rental to be added.
+  # - person: The person renting the book.
+  # - date: The date of the rental.
   #
   # Actions:
+  # - Create a new rental with the provided person, date, and the book itself.
   # - Add the rental to the book's rentals unless it's already included.
-  # - Set the book for the rental.
   #
   # Returns: None.
-  def add_rental(rental)
-    @rentals << rental unless @rentals.include?(rental)
-    rental.book = self
+  def add_rental(person, date)
+    Rental.new(date, self, person)
   end
 end
