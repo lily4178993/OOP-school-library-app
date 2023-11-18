@@ -6,7 +6,7 @@ class Teacher < Person
   # Constructor initialization
   # extends Person's constructor by adding `@specialization` and a parameter for it.
   def initialize(age, specialization, name = 'Unknown', parent_permission: true)
-    super(age, name, parent_permission)
+    super(age, name, parent_permission: parent_permission)
     @specialization = specialization
   end
 
