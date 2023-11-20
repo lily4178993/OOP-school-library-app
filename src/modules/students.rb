@@ -12,10 +12,8 @@ STUDENT_CREATION_FAILURE_MESSAGE = 'The student cannot use services.'.freeze
 # - Checks if the student can use services and adds them to the people array if successful.
 # - Outputs a success message if the student is created; otherwise, outputs a failure message.
 def create_student
-  print 'Age: '
-  age = get_positive_integer_input
-  print 'Name: '
-  name = get_user_input
+  age = get_positive_integer_input('Age')
+  name = get_user_input('Name')
   parent_permission = input_parent_permission
 
   new_student = Student.new(age, parent_permission, name)

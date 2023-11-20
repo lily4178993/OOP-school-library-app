@@ -11,10 +11,8 @@ TEACHER_CREATION_FAILURE_MESSAGE = 'The teacher cannot use services.'.freeze
 # - Checks if the teacher can use services and adds them to the people array if successful.
 # - Outputs a success message if the teacher is created; otherwise, outputs a failure message.
 def create_teacher
-  print 'Age: '
-  age = get_positive_integer_input
-  print 'Name: '
-  name = get_user_input
+  age = get_positive_integer_input('Age')
+  name = get_user_input('Name')
   print 'Specialization: '
   specialization = get_user_input
 
