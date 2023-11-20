@@ -5,21 +5,22 @@
 Welcome to the OOP School Library App! As the librarian of OOP University, you need an efficient tool to manage your library. This app allows you to add new students or teachers, add new books, and keep records of who borrowed a given book and when.
 
 ## Table of Contents
-- [About the Project](#about-the-project)
-- [Built With](#built-with)
-- [Tech Stack](#tech-stack)
-- [Key Features](#key-features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [Install](#install)
-- [Usage](#usage)
-- [Author](#authors)
-- [Future Features](#future-features)
-- [Contributing](#contributing)
-- [Show Your Support](#show-your-support)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
+- [OOP School Library App ](#oop-school-library-app-)
+  - [Table of Contents](#table-of-contents)
+  - [Built With ](#built-with-)
+  - [Tech Stack ](#tech-stack-)
+  - [Key Features ](#key-features-)
+  - [Getting Started ](#getting-started-)
+    - [Prerequisites ](#prerequisites-)
+    - [Setup ](#setup-)
+    - [Install ](#install-)
+  - [Usage ](#usage-)
+  - [Author ](#author-)
+  - [Future Features ](#future-features-)
+  - [Contributing ](#contributing-)
+  - [Show your support ](#show-your-support-)
+  - [Acknowledgements ](#acknowledgements-)
+  - [License ](#license-)
 
 ## Built With <a name="built-with"></a>
 
@@ -66,6 +67,12 @@ Before you begin, ensure you have the following installed:
 - Run the script with `ruby main.rb` and explore the OOP School Library application
 
 ## Author <a name="authors"></a>
+
+👤 **Richard Sikaonga**
+
+- GitHub: [@richie1988](https://github.com/richie1988)
+- Twitter: [@RichieSikaonga](https://twitter.com/RichieSikaonga)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/richard-sikaonga-039940275)
 
 This project was developed by **[Nelly Telli](https://github.com/lily4178993)**
 
