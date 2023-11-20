@@ -1,4 +1,4 @@
-require_relative '../../src/utils/book.rb'
+require_relative '../../src/utils/book'
 
 NO_BOOKS_ERROR_MESSAGE = 'There are no books here! Come later :)'.freeze
 

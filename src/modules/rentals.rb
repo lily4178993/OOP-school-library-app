@@ -62,7 +62,7 @@ end
 # - Invokes the select_book and select_person methods to guide the user in choosing a book and a person.
 # - If the user cancels the selection at any point, returns from the method.
 # - Prompts the user for a date using the get_user_input method.
-  # - Calls the create_and_display_rental method with the chosen date, book, and person.
+# - Calls the create_and_display_rental method with the chosen date, book, and person.
 #
 # Parameters: None
 # Returns: None
