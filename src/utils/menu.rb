@@ -12,16 +12,16 @@ MENU_OPTIONS = {
 def app_menu
   puts "\nWelcome to School Library App!\n\n"
   MENU_OPTIONS.each { |key, value| puts "#{key} - #{value}" }
-  print 'Enter a number=>'
+  print 'Enter a number: '
 end
 
 def take_action(app, input)
   case input
-  when 1 then app.list_of_books
-  when 2 then app.list_of_people
-  when 3 then app.create_book
-  when 4 then app.create_person
-  when 5 then app.create_rental
-  when 6 then app.list_of_rentals_per_person
+  when 1 then app.list_all_books
+  when 2 then app.list_all_people
+  when 3 then app.create_a_book
+  when 4 then app.create_a_person
+  when 5 then app.create_a_rental
+  when 6 then app.list_all_rentals_per_person
   end
 end
