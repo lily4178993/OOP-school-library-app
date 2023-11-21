@@ -5,6 +5,11 @@ def main
   app = App.new
   input = nil
 
+  Signal.trap('INT') do
+    app.save_data
+    exit
+  end
+
   until input == 7
     app_menu
     input = gets.chomp.to_i

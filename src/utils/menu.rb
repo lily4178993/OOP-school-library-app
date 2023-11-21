@@ -1,4 +1,5 @@
-# menu.rb
+require_relative '../app'
+
 MENU_OPTIONS = {
   1 => 'List all books',
   2 => 'List all people',
@@ -16,12 +17,43 @@ def app_menu
 end
 
 def take_action(app, input)
-  case input
-  when 1 then app.list_all_books
-  when 2 then app.list_all_people
-  when 3 then app.create_a_book
-  when 4 then app.create_a_person
-  when 5 then app.create_a_rental
-  when 6 then app.list_all_rentals_per_person
+  actions = {
+    1 => :list_all_books,
+    2 => :list_all_people,
+    3 => :create_a_book,
+    4 => :create_a_person,
+    5 => :create_a_rental,
+    6 => :list_all_rentals_per_person,
+    7 => :exit_application
+  }
+
+  action = actions[input]
+
+  if action
+    app.send(action)
+  else
+    puts 'Invalid input. Please choose a valid number.'
   end
+end
+
+def exit_application
+  @app.save_data if @app
+  puts 'Exiting the App. Goodbye!'
+  exit
+end
+
+# Handle missing files during startup
+begin
+  @app = App.new
+rescue StandardError => e
+  puts "Error during startup: #{e.message}"
+  e.backtrace.each { |line| puts line }
+  exit
+end
+
+# Main loop
+loop do
+  app_menu
+  user_input = gets.chomp.to_i
+  take_action(@app, user_input)
 end
