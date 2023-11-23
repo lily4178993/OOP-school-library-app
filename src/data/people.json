@@ -1,0 +1,26 @@
+[
+  {
+    "id": "9831eb73-bed3-4354-bd36-4926f43cba51",
+    "name": "Ali Sori",
+    "age": 12,
+    "parent_permission": true,
+    "category": "Student",
+    "classroom": null
+  },
+  {
+    "id": "398324cb-4fc6-4ed0-8d8b-ffe324e57f67",
+    "name": "Mamadou Saliouf",
+    "age": 35,
+    "parent_permission": true,
+    "specialization": "Sport",
+    "category": "Teacher"
+  },
+  {
+    "id": "bc8c8cda-0550-48ce-8e58-73aeace84334",
+    "name": "Anita Bamba",
+    "age": 20,
+    "parent_permission": false,
+    "category": "Student",
+    "classroom": null
+  }
+]

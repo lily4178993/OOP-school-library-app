@@ -16,7 +16,9 @@ def create_student
   name = get_user_input('Name')
   parent_permission = input_parent_permission
 
-  new_student = Student.new(age, parent_permission, name)
+  classroom = nil
+
+  new_student = Student.new(age, classroom, name, parent_permission: parent_permission)
 
   if new_student.can_use_services?
     @people << new_student
